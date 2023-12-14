@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="schloss.ico" type="image/x-icon">
+
+    <title>Registrierung und Login</title>
+    <style>
+        .error-border {
+            border: 1px solid red;
+        }
+
+        .error-message {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    
+
+    <div class="login-container">
+        <h2>Event-Planer</h2>
+        <fieldset>
+            <div id="registration-form" style="display: none;">
+                <h3 class="registre">Registrierung</h3>
+                <form id="register-form">
+                    <div class="form-group">
+                        <label class="mail" for="reg-email">E-Mail-Adresse:</label>
+                        <input class="email" type="email" id="reg-email" name="reg-email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="mail" for="reg-password">Passwort:</label>
+                        <input type="password" id="reg-password" name="reg-password" required>
+                    </div>
+                    <p class="error-message" id="registration-error"></p>
+                    <button class="reg" type="button" onclick="register()">Registrieren</button>
+                    <a id="back-button" href="index.html">Zurück</a>
+                </form>
+            </div>
+
+            <div id="login-form">
+
+                <h3>Login</h3>
+                <form id="login-form">
+                    <div class="form-group">
+                        <label for="email">E-Mail-Adresse:</label>
+                        <input class="email" type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="p" for="password">Passwort:</label>
+                        <input class="passw" type="password" id="password" name="password" required>
+                    </div>
+                    <p class="error-message" id="login-error"></p>
+                    <button type="button" onclick="login()">Anmelden</button><br>
+
+                    <button class="regis" onclick="toggleForm()">Zur Registrierung</button><br>
+                </form>
+            </div>
+
+
+        </fieldset>
+        <button class="Konto" onclick="adminLogin()">Admin-Konto</button>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

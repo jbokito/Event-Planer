@@ -1,0 +1,154 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightslategray;
+    margin: 12% 10%;
+    padding: 0;
+    background-image: url(r-crypto-cryptocurrency-cryptocurrencies-cash-money-bank-payment_95080.ico);
+}
+
+.login-container {
+    background-color: #fff;
+    max-width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    text-align: center;
+    margin-right: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #33333388;
+}
+
+.error-border {
+    border: 1px solid red;
+}
+
+.email {
+    width: 93%;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.p {
+    border-radius: 0px;
+}
+
+.Konto {
+    margin-top: 15px;
+    background-color: white;
+    color: blue;
+}
+
+.Konto:hover {
+    color: green;
+    background-color: white;
+}
+
+#password,
+#reg-password {
+    width: 93%;
+
+
+}
+
+h3 {
+    text-decoration: underline;
+}
+
+#back-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    color: white;
+    background-color: #333;
+    height: 34px;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+}
+
+#back-button:hover {
+    background-color: #33333388;
+}
+
+.regis {
+    margin-top: 10px;
+}
+
+.registre {
+    color: rgb(63, 135, 63);
+}
+
+.mail {
+    color: rgb(63, 135, 63);
+}
+
+.reg {
+    background-color: rgb(63, 135, 63);
+}
+
+#bild-container {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+/* Media Queries für kleinere Bildschirme (z.B. Handys) */
+@media screen and (max-width: 768px) {
+    body {
+        margin: 30% 5%;
+    }
+
+    .login-container {
+        max-width: 100%;
+        margin: 50px auto;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    #back-button {
+        font-size: 12px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}

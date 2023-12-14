@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventPlaner</title>
+    <link rel="stylesheet" href="Startseite.css">
+    <link rel="icon" href="schreiben.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <div id="user-info">
+        <span id="username-display"></span>
+    </div>
+
+
+    <header>
+        <h1>Event-Planer</h1>
+        <button id="goToCompletedEntriesButton">Erledigte Einträge</button>
+        <button class="abmelden" id="goToCompletedEntriesButton1">Abmelden</button>
+    </header>
+    <main>
+
+        <fieldset class="personalien">
+            <form id="eventForm">
+                <label for="eventDate">Datum:</label>
+                <input type="date" id="eventDate" required>
+
+                <label for="eventTime">Uhrzeit:</label>
+                <input type="time" id="eventTime" required>
+
+                <label for="eventLocation">Ort:</label>
+                <input type="text" id="eventLocation" required>
+
+                <label for="eventDescription">Beschreibung:</label>
+                <textarea id="eventDescription" required></textarea>
+
+                <label for="eventPriority">Priorität:</label>
+                <select id="eventPriority">
+                    <option value="heute">Heute</option>
+                    <option value="sonstig">Sonstig</option>
+
+                </select>
+                <button class="buttonerstell" type="button" id="addEvent">Event hinzufügen</button>
+            </form>
+        </fieldset>
+
+
+        <br>
+        <br>
+        <br>
+
+       
+
+        <div class="columns">
+            <div class="column" id="todayColumn">
+                <h2 id="sonstige">Heute</h2><br>
+                <div id="todayEvents" class="eventList">
+                    <!-- Hier werden die heute zu erledigenden Events angezeigt -->
+                </div>
+
+               
+            </div>
+            <div class="column" id="otherColumn">
+                <h2 id="sonstige">Sonstiges</h2><br>
+                <div id="otherEvents" class="eventList">
+                    <!-- Hier werden die sonstigen Events angezeigt -->
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <p>&copy; 2023 EventPlaner / Remo Albisser</p>
+    </footer>
+    <script src="Startseite.js"></script>
+</body>
+
+</html>

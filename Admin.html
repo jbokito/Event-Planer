@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrator</title>
+    <link rel="stylesheet" href="Admin.css">
+    <link rel="icon" href="admin.ico" type="image/x-icon">
+</head>
+<body>
+    <main>
+        <div class="Titel">
+            <h2>Admin Panel</h2>
+        </div>
+        <div class="knöpfe">
+            <button class="benutzer" onclick="showUserData()">Benutzerdaten anzeigen</button>
+            <button class="clear" onclick="clearUserData()">Alle Benutzerdaten löschen!</button>
+            <button onclick="extractUserData()">Extrahieren</button>
+            <a id="back-button" href="index.html">Zurück</a>
+        </div>
+        <div class="Ausgabe" id="admin-content">
+            <table id="user-table" class="user-table">
+                <thead>
+                  
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </main>
+    <script src="Admin.js"></script>
+</body>
+</html>

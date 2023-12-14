@@ -1,0 +1,112 @@
+/* Gemeinsame Stile für alle Bildschirmgrößen */
+body {
+    background-image: url(schlüssel5.ico);
+    background-color: lightgreen;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.Titel {
+    text-align: center;
+    text-decoration: underline;
+    color: white;
+    margin: 20px 0;
+}
+
+.knöpfe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+button {
+    color: white;
+    background-color: #333;
+    width: 160px;
+    height: 30px;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    background-color: lightgray;
+}
+
+.clear {
+    background-color: lightgreen;
+    color: black;
+    width: 180px;
+}
+
+.benutzer {
+    width: 160px;
+}
+
+.Ausgabe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+table,
+th,
+td {
+    border: 1px solid white;
+    text-align: center;
+}
+
+th,
+td {
+    padding: 10px;
+    color: white;
+}
+
+main {
+   
+    background-color: rgb(80, 89, 99);
+    padding: 20px;
+    margin-top: 10%;
+}
+
+#back-button {
+    display: flex;
+    background-color: #333;
+    color: white;
+    width: 160px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 14px;
+
+}
+
+#back-button:hover {
+    background-color: lightgray;
+}
+
+/* Media Queries für kleinere Bildschirme (z.B. Handys) */
+@media screen and (max-width: 768px) {
+    .knöpfe {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    button, .clear, .benutzer, #back-button {
+        width: 100%;
+    }
+
+    main {
+        margin: 30% 5%;
+    }
+}
