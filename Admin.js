@@ -11,6 +11,7 @@ function checkAdminCredentials() {
     }
 }
 
+
 // Diese Funktion zeigt die Benutzerdaten in einer Tabelle auf der Admin-Seite an.
 function showUserData() {
     const adminContent = document.getElementById("admin-content");
